@@ -1,0 +1,9 @@
+
+
+
+
+
+tensorflow_backend.py里面的3154行进行了修改，原来是return tf.nn.softmax(x, axis=axis)
+
+
+
