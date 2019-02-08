@@ -1,6 +1,6 @@
 # encoding: utf-8
 from is_for_import.env_test import frameChooseEnv
-from My_demo.Tensorflow_demo.reinforcement_demo.blogs import DQN
+from is_for_import.DQN_test import DQN
 import time
 
 import math
@@ -29,7 +29,7 @@ def run_env():
     for episode in range(300):
         # initial observation
         observation = env.creat_new_epotch(whole_frames=input_train[episode],lable=lable_train[episode])
-
+        time_count = 0
         while True:
             # fresh env
             # env.render()
@@ -38,24 +38,27 @@ def run_env():
             action = RL.choose_action(observation)
 
             # RL take action and get next observation and reward
-            observation_, reward, done = env.step(action)
-
+            # observation_, reward, done = env.step(action)
+            observation,a,reward,observation_ = env.step(action)
+            if observation_[0].shape !=(50,75):
+                print(209)
             RL.store_transition(observation, action, reward, observation_)
 
-            if (step > 200) and (step % 10 == 0):
+            if (step > 200) and (step % 20 == 0):
                 RL.learn()
 
             # swap observation
             observation = observation_
 
             # break while loop when end of this episode
-            if done:
+            time_count += 1
+            if time_count>50:
+                time_count = 0
                 break
             step += 1
 
     # end of game
-    print('game over')
-    env.destroy()
+    print('over')
 
 
 if __name__ == "__main__":
@@ -71,8 +74,7 @@ if __name__ == "__main__":
 
     # maze game
     env = frameChooseEnv()
-    RL = DQN(env.n_actions, env.n_features,
-                      learning_rate=0.01,
+    RL = DQN(learning_rate=0.01,
                       reward_decay=0.9,
                       e_greedy=0.9,
                       replace_target_iter=10,

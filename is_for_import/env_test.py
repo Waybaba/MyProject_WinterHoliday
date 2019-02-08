@@ -32,7 +32,7 @@ class frameChooseEnv:
     def __init__(self, whole_length=50, target_length=30):
         self.whole_length = whole_length
         self.target_length = target_length
-        self.predict_model = models.load_model("model_backup/" + "30_predict_model" + ".h5")
+        self.predict_model = models.load_model("/Users/Waybaba/PycharmProjects/Machine_learning/MyProject/My_demo/0203_reinforcement_demo/test/model_backup/30_predict_model.h5")
 
     ### new epotch, return state
     def creat_new_epotch(self, whole_frames, lable):
@@ -45,10 +45,14 @@ class frameChooseEnv:
 
     ### important! excute action and return s,action,reward,s_,action format 30x3
     def step(self, action):
-        s = copy.deepcopy(
-            [self.whole_frames, self.chose_frames, self.current_mask])  # this state #深拷贝才能完全复制，不过比较耗时，这好像是拷贝的唯一方法
+        # change action format
+        action_2D = np.zeros(shape=(self.target_length,3))
+        x_axis = 0 if action % 2 ==0 else 2
+        y_axis = int(action/2)
+        action_2D[y_axis][x_axis] = 1.0
+        s = copy.deepcopy([self.whole_frames, self.chose_frames, self.current_mask])  # this state #深拷贝才能完全复制，不过比较耗时，这好像是拷贝的唯一方法
         # mask update
-        self.current_mask = self.update_mask_with_action(self.current_mask, action)
+        self.current_mask = self.update_mask_with_action(self.current_mask, action_2D)
         # produce chose_frames
         self.chose_frames = self.choose_frame_from_mask(self.whole_frames, self.current_mask)
         # give back rewards
@@ -207,7 +211,7 @@ class frameChooseEnv:
 # print(new_mask)
 
 
-# # -----------------env test------------------------------
+# -----------------env test------------------------------
 # input_train,lable_train,input_test,lable_test =ntu.load_date("4_actions")
 # # ntusee.show_gif(input_train[1])
 # input_train = input_train.reshape((-1,50,75))#数据整形，然后输
@@ -218,11 +222,7 @@ class frameChooseEnv:
 # print('input_test shape:', input_test.shape)
 # env = frameChooseEnv(whole_length=50,target_length=30)
 # state = env.creat_new_epotch(whole_frames=input_train[0],lable=lable_train[0])
-# temp_action = np.zeros(shape=[30,3])
-# temp_action[0][2] = 1.0
-# temp_action[1][2] = 1.0
-# temp_action[2][2] = 1.0
-# temp_action[29][2] = 1.0
+# temp_action = 59
 # s,a,r,s_ = env.step(temp_action)
 # print(s)
 # print(a)
