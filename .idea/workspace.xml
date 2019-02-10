@@ -2,11 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="806c5a3e-9e2c-4246-ba6b-a0458ecda661" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/My_demo/0203_reinforcement_demo/0210_reinforcement/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/My_demo/choice_net/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/My_demo/choice_net/test_tem.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/is_for_import/main_exam.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/My_demo/0203_reinforcement_demo/test/main_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/My_demo/0203_reinforcement_demo/test/main_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/My_demo/0203_reinforcement_demo/test/model1_eval.png" beforeDir="false" afterPath="$PROJECT_DIR$/My_demo/0203_reinforcement_demo/test/model1_eval.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/My_demo/0203_reinforcement_demo/test/model1_target.png" beforeDir="false" afterPath="$PROJECT_DIR$/My_demo/0203_reinforcement_demo/test/model1_target.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/is_for_import/DQN_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/is_for_import/DQN_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/is_for_import/env_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/is_for_import/env_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/is_for_import/model1_eval.png" beforeDir="false" afterPath="$PROJECT_DIR$/is_for_import/model1_eval.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/is_for_import/model1_target.png" beforeDir="false" afterPath="$PROJECT_DIR$/is_for_import/model1_target.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/is_for_import/env_test.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,7 +33,7 @@
     <SUITE FILE_PATH="coverage/MyProject$env_test.coverage" NAME="env_test Coverage Results" MODIFIED="1549629847731" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/My_demo/0203_reinforcement_demo/test" />
     <SUITE FILE_PATH="coverage/MyProject$test.coverage" NAME="test Coverage Results" MODIFIED="1544891218123" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tensorflow_Demo" />
     <SUITE FILE_PATH="coverage/MyProject$model_backup.coverage" NAME="model_backup Coverage Results" MODIFIED="1545019235945" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Skeleton Based Human Action" />
-    <SUITE FILE_PATH="coverage/MyProject$main_test.coverage" NAME="main_test Coverage Results" MODIFIED="1549649567767" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/My_demo/0203_reinforcement_demo/test" />
+    <SUITE FILE_PATH="coverage/MyProject$main_test.coverage" NAME="main_test Coverage Results" MODIFIED="1549808795959" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/My_demo/0203_reinforcement_demo/test" />
     <SUITE FILE_PATH="coverage/MyProject$my_basic_layer.coverage" NAME="my_basic_layer Coverage Results" MODIFIED="1545291255696" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/My_demo/Tensorflow_demo" />
     <SUITE FILE_PATH="coverage/MyProject$skelelon_visualization.coverage" NAME="skelelon_visualization Coverage Results" MODIFIED="1543495327569" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Skeleton Based Human Action" />
     <SUITE FILE_PATH="coverage/MyProject$DDPG.coverage" NAME="DDPG Coverage Results" MODIFIED="1545032655109" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/reinforcement_learning_MoFan/experiments/Robot_arm" />
@@ -48,8 +53,8 @@
     <SUITE FILE_PATH="coverage/MyProject$my_basic_layer__1_.coverage" NAME="my_basic_layer (1) Coverage Results" MODIFIED="1546069113715" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/My_demo/Tensorflow_demo/for_import" />
     <SUITE FILE_PATH="coverage/MyProject$first_run_demo.coverage" NAME="first_run_demo Coverage Results" MODIFIED="1548930687907" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/My_demo/Tensorflow_demo" />
     <SUITE FILE_PATH="coverage/MyProject$test11_frame_choose.coverage" NAME="test11_frame_choose Coverage Results" MODIFIED="1549598180001" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/My_demo/Tensorflow_demo" />
-    <SUITE FILE_PATH="coverage/MyProject$DQN_test.coverage" NAME="DQN_test Coverage Results" MODIFIED="1549649293105" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/is_for_import" />
-    <SUITE FILE_PATH="coverage/MyProject$main.coverage" NAME="main Coverage Results" MODIFIED="1540263395560" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/MyProject$DQN_test.coverage" NAME="DQN_test Coverage Results" MODIFIED="1549807097845" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/is_for_import" />
+    <SUITE FILE_PATH="coverage/MyProject$main.coverage" NAME="main Coverage Results" MODIFIED="1549823260189" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/My_demo/choice_net" />
     <SUITE FILE_PATH="coverage/MyProject$run_CartPole.coverage" NAME="run_CartPole Coverage Results" MODIFIED="1545127730495" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/reinforcement_learning_MoFan/contents/7_Policy_gradient_softmax" />
     <SUITE FILE_PATH="coverage/MyProject$RL_brain.coverage" NAME="RL_brain Coverage Results" MODIFIED="1549299010286" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tutor/reinforcement_learning_MoFan/contents/5_Deep_Q_Network" />
     <SUITE FILE_PATH="coverage/MyProject$DDPG__1_.coverage" NAME="DDPG (1) Coverage Results" MODIFIED="1545033911101" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/reinforcement_learning_MoFan/experiments/Solve_BipedalWalker" />
@@ -64,13 +69,14 @@
     <SUITE FILE_PATH="coverage/MyProject$test_2.coverage" NAME="test_2 Coverage Results" MODIFIED="1544067694676" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Reinforcement Learning" />
     <SUITE FILE_PATH="coverage/MyProject$winter_first_test.coverage" NAME="winter_first_test Coverage Results" MODIFIED="1548919547135" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/My_demo/Tensorflow_demo" />
     <SUITE FILE_PATH="coverage/MyProject$test2.coverage" NAME="test2 Coverage Results" MODIFIED="1544973705099" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tensorflow_Demo" />
+    <SUITE FILE_PATH="coverage/MyProject$main_exam.coverage" NAME="main_exam Coverage Results" MODIFIED="1549804691592" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/My_demo/0203_reinforcement_demo/test" />
     <SUITE FILE_PATH="coverage/MyProject$model_test.coverage" NAME="model_test Coverage Results" MODIFIED="1548929966249" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/My_demo/old" />
     <SUITE FILE_PATH="coverage/MyProject$01_using_tensorboard.coverage" NAME="01_using_tensorboard Coverage Results" MODIFIED="1544894910767" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tensorflow_Demo/tensorflow_cookbook-master/11_More_with_TensorFlow/01_Visualizing_Computational_Graphs" />
-    <SUITE FILE_PATH="coverage/MyProject$test7.coverage" NAME="test7 Coverage Results" MODIFIED="1549171570588" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/My_demo/Tensorflow_demo" />
+    <SUITE FILE_PATH="coverage/MyProject$test7.coverage" NAME="test7 Coverage Results" MODIFIED="1549822547987" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/My_demo/Tensorflow_demo" />
     <SUITE FILE_PATH="coverage/MyProject$03_implementing_lstm.coverage" NAME="03_implementing_lstm Coverage Results" MODIFIED="1545009023085" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tensorflow_Demo/tensorflow_cookbook-master/09_Recurrent_Neural_Networks/03_Implementing_LSTM" />
     <SUITE FILE_PATH="coverage/MyProject$full_code__1_.coverage" NAME="full_code (1) Coverage Results" MODIFIED="1548922402109" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tutor/tensorflow_MoFan/tf20_RNN2" />
     <SUITE FILE_PATH="coverage/MyProject$test_time.coverage" NAME="test_time Coverage Results" MODIFIED="1549257464040" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/My_demo/Tensorflow_demo" />
-    <SUITE FILE_PATH="coverage/MyProject$test_tem.coverage" NAME="test_tem Coverage Results" MODIFIED="1549597773785" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/My_demo/Tensorflow_demo" />
+    <SUITE FILE_PATH="coverage/MyProject$test_tem.coverage" NAME="test_tem Coverage Results" MODIFIED="1549818535547" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/My_demo/choice_net" />
     <SUITE FILE_PATH="coverage/MyProject$ntu_skeleton_visualization__1_.coverage" NAME="ntu_skeleton_visualization (1) Coverage Results" MODIFIED="1543996785538" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Basic_demo" />
     <SUITE FILE_PATH="coverage/MyProject$03_cnn_cifar10.coverage" NAME="03_cnn_cifar10 Coverage Results" MODIFIED="1544974869924" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tensorflow_Demo/tensorflow_cookbook-master/08_Convolutional_Neural_Networks/03_CNN_CIFAR10" />
     <SUITE FILE_PATH="coverage/MyProject$first_rnn_test.coverage" NAME="first_rnn_test Coverage Results" MODIFIED="1548934198844" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Skeleton Based Human Action" />
@@ -105,103 +111,114 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="env_test.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/is_for_import/env_test.py">
+      <file leaf-file-name="test10_nonsequence.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/My_demo/Tensorflow_demo/test10_nonsequence.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="746">
-              <caret line="59" column="70" lean-forward="true" selection-start-line="59" selection-start-column="70" selection-end-line="59" selection-end-column="70" />
+            <state relative-caret-position="247">
+              <caret line="76" column="13" selection-start-line="76" selection-start-column="13" selection-end-line="76" selection-end-column="13" />
               <folding>
-                <element signature="e#18#29#0" expanded="true" />
-                <element signature="e#4730#7646#0" />
+                <element signature="e#18#42#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main_test.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/My_demo/0203_reinforcement_demo/test/main_test.py">
+      <file leaf-file-name="test11_frame_choose.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/My_demo/Tensorflow_demo/test11_frame_choose.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="76" column="16" lean-forward="true" selection-start-line="76" selection-start-column="16" selection-end-line="76" selection-end-column="16" />
+            <state relative-caret-position="-535">
+              <caret line="106" selection-start-line="106" selection-end-line="106" selection-end-column="89" />
               <folding>
-                <element signature="e#18#67#0" expanded="true" />
+                <element signature="e#18#42#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DQN_net_test.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/My_demo/0203_reinforcement_demo/test/DQN_net_test.py">
+      <file leaf-file-name="test7.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/My_demo/Tensorflow_demo/test7.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-357">
-              <caret line="25" column="36" lean-forward="true" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
+            <state relative-caret-position="1038">
+              <caret line="166" column="21" selection-start-line="166" selection-start-column="21" selection-end-line="166" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test8_tensorflow_on_skeleton.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/My_demo/Tensorflow_demo/test8_tensorflow_on_skeleton.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="260">
+              <caret line="83" column="21" lean-forward="true" selection-start-line="83" selection-start-column="21" selection-end-line="83" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test6.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/My_demo/Tensorflow_demo/test6.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/My_demo/choice_net/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="18">
+              <caret line="189" column="1" selection-start-line="189" selection-start-column="1" selection-end-line="189" selection-end-column="1" />
               <folding>
-                <element signature="e#0#18#0" expanded="true" />
+                <element signature="e#18#69#0" expanded="true" />
+                <element signature="e#855#2105#0" />
+                <element signature="e#2780#3026#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="maze_env.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/My_demo/0203_reinforcement_demo/from_others/a_dqn_with_keras_demo/maze_env.py">
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/anaconda3/envs/winter2/lib/python3.5/site-packages/keras/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="-347">
+              <caret line="880" column="53" selection-start-line="880" selection-start-column="53" selection-end-line="880" selection-end-column="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test_tem.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/My_demo/choice_net/test_tem.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="23" column="8" lean-forward="true" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
               <folding>
-                <element signature="e#0#18#0" expanded="true" />
+                <element signature="e#18#69#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DQN_demo.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/My_demo/0203_reinforcement_demo/test/DQN_demo.py">
+      <file leaf-file-name="finish_env.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/is_for_import/finish_env.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="469">
-              <caret line="116" lean-forward="true" selection-start-line="116" selection-end-line="116" />
+            <state relative-caret-position="229">
+              <caret line="45" column="57" selection-start-line="45" selection-start-column="57" selection-end-line="45" selection-end-column="57" />
               <folding>
-                <element signature="e#0#18#0" expanded="true" />
+                <element signature="e#559#812#0" />
+                <element signature="e#908#1231#0" />
+                <element signature="e#1350#2123#0" />
+                <element signature="e#2203#2475#0" />
+                <element signature="e#2544#4477#0" />
+                <element signature="e#4539#7455#0" />
+                <element signature="e#7516#7709#0" />
+                <element signature="e#7895#8218#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="model1_target.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/is_for_import/model1_target.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file leaf-file-name="model1_eval.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/is_for_import/model1_eval.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file leaf-file-name="codecs.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/anaconda3/envs/winter2/lib/python3.5/codecs.py">
+      <file leaf-file-name="test9_keras_try.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/My_demo/Tensorflow_demo/test9_keras_try.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="308" selection-start-line="308" selection-end-line="308" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="training.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/anaconda3/envs/winter2/lib/python3.5/site-packages/keras/engine/training.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1002">
-              <caret line="140" selection-start-line="140" selection-end-line="140" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DQN_test.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/is_for_import/DQN_test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="46" column="6" lean-forward="true" selection-start-line="46" selection-start-column="6" selection-end-line="46" selection-end-column="6" />
+            <state relative-caret-position="357">
+              <caret line="21" column="14" lean-forward="true" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
               <folding>
-                <element signature="e#18#29#0" expanded="true" />
-                <element signature="e#2103#2205#0" />
-                <element signature="e#4262#4731#0" />
+                <element signature="e#18#42#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -218,10 +235,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>test</find>
-      <find>y_test</find>
-      <find>N_STATES</find>
-      <find>q_predict</find>
       <find>x_vals_train</find>
       <find>history</find>
       <find>build</find>
@@ -245,9 +258,13 @@
       <find>copy</find>
       <find>action</find>
       <find>predict</find>
-      <find>predic</find>
       <find>[a, r]</find>
       <find>32</find>
+      <find>epotch</find>
+      <find>predic</find>
+      <find>lable_test</find>
+      <find>* x *</find>
+      <find>lable_train</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/My_demo/0203_reinforcement_demo/test/package</dir>
@@ -259,14 +276,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Tensorflow_Demo/test3.py" />
-        <option value="$PROJECT_DIR$/Tensorflow_Demo/test2.py" />
-        <option value="$PROJECT_DIR$/Basic_demo/ntu_date_preprocess_2.py" />
-        <option value="$PROJECT_DIR$/Tensorflow_Demo/tensorflow_cookbook-master/09_Recurrent_Neural_Networks/03_Implementing_LSTM/03_implementing_lstm.py" />
-        <option value="$PROJECT_DIR$/Skeleton Based Human Action/model_backup.py" />
-        <option value="$PROJECT_DIR$/reinforcement_learning_MoFan/contents/5_Deep_Q_Network/RL_brain.py" />
-        <option value="$PROJECT_DIR$/reinforcement_learning_MoFan/contents/5_Deep_Q_Network/maze_env.py" />
-        <option value="$PROJECT_DIR$/reinforcement_learning_MoFan/contents/5_Deep_Q_Network/run_this.py" />
         <option value="$PROJECT_DIR$/My_demo/Tensorflow_demo/test4.py" />
         <option value="$PROJECT_DIR$/My_demo/Tensorflow_demo/build_network_template.py" />
         <option value="$PROJECT_DIR$/for_import/ntu_date_preprocess_2.py" />
@@ -307,9 +316,17 @@
         <option value="$PROJECT_DIR$/My_demo/Tensorflow_demo/test9_keras_try.py" />
         <option value="$PROJECT_DIR$/My_demo/0203_reinforcement_demo/test/env_test.py" />
         <option value="$PROJECT_DIR$/My_demo/0203_reinforcement_demo/test/DQN_net_test.py" />
+        <option value="$PROJECT_DIR$/is_for_import/DQN.py" />
+        <option value="$PROJECT_DIR$/is_for_import/main_exam.py" />
+        <option value="$PROJECT_DIR$/is_for_import/DQN_final.py" />
+        <option value="$PROJECT_DIR$/is_for_import/env_final.py" />
+        <option value="$PROJECT_DIR$/My_demo/0203_reinforcement_demo/test/main_exam.py" />
+        <option value="$PROJECT_DIR$/My_demo/0203_reinforcement_demo/test/finish_evaluate.py" />
         <option value="$PROJECT_DIR$/is_for_import/env_test.py" />
-        <option value="$PROJECT_DIR$/My_demo/0203_reinforcement_demo/test/main_test.py" />
         <option value="$PROJECT_DIR$/is_for_import/DQN_test.py" />
+        <option value="$PROJECT_DIR$/My_demo/0203_reinforcement_demo/test/main_test.py" />
+        <option value="$PROJECT_DIR$/My_demo/choice_net/test_tem.py" />
+        <option value="$PROJECT_DIR$/My_demo/choice_net/main.py" />
       </list>
     </option>
   </component>
@@ -333,7 +350,31 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scope">
+        <subPane subId="Changed Files">
+          <expand>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="MyProject" type="cbb8eebc:String" user="MyProject" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="MyProject" type="cbb8eebc:String" user="MyProject" />
+              <item name="is_for_import" type="cbb8eebc:String" user="is_for_import" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <subPane subId="Project Files">
+          <expand>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="MyProject" type="cbb8eebc:String" user="MyProject" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -355,85 +396,7 @@
               <item name="MyProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="MyProject" type="462c0819:PsiDirectoryNode" />
               <item name="My_demo" type="462c0819:PsiDirectoryNode" />
-              <item name="0203_reinforcement_demo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyProject" type="462c0819:PsiDirectoryNode" />
-              <item name="My_demo" type="462c0819:PsiDirectoryNode" />
-              <item name="0203_reinforcement_demo" type="462c0819:PsiDirectoryNode" />
-              <item name="from_others" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyProject" type="462c0819:PsiDirectoryNode" />
-              <item name="My_demo" type="462c0819:PsiDirectoryNode" />
-              <item name="0203_reinforcement_demo" type="462c0819:PsiDirectoryNode" />
-              <item name="from_others" type="462c0819:PsiDirectoryNode" />
-              <item name="a_dqn_with_keras_demo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyProject" type="462c0819:PsiDirectoryNode" />
-              <item name="My_demo" type="462c0819:PsiDirectoryNode" />
-              <item name="0203_reinforcement_demo" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyProject" type="462c0819:PsiDirectoryNode" />
-              <item name="My_demo" type="462c0819:PsiDirectoryNode" />
-              <item name="0203_reinforcement_demo" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="model_backup" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyProject" type="462c0819:PsiDirectoryNode" />
-              <item name="My_demo" type="462c0819:PsiDirectoryNode" />
-              <item name="0203_reinforcement_demo" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="package" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyProject" type="462c0819:PsiDirectoryNode" />
-              <item name="My_demo" type="462c0819:PsiDirectoryNode" />
-              <item name="Tensorflow_demo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyProject" type="462c0819:PsiDirectoryNode" />
-              <item name="Tutor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyProject" type="462c0819:PsiDirectoryNode" />
-              <item name="Tutor" type="462c0819:PsiDirectoryNode" />
-              <item name="reinforcement_learning_MoFan" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyProject" type="462c0819:PsiDirectoryNode" />
-              <item name="Tutor" type="462c0819:PsiDirectoryNode" />
-              <item name="reinforcement_learning_MoFan" type="462c0819:PsiDirectoryNode" />
-              <item name="contents" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyProject" type="462c0819:PsiDirectoryNode" />
-              <item name="Tutor" type="462c0819:PsiDirectoryNode" />
-              <item name="reinforcement_learning_MoFan" type="462c0819:PsiDirectoryNode" />
-              <item name="contents" type="462c0819:PsiDirectoryNode" />
-              <item name="5_Deep_Q_Network" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyProject" type="462c0819:PsiDirectoryNode" />
-              <item name="Tutor" type="462c0819:PsiDirectoryNode" />
-              <item name="reinforcement_learning_MoFan" type="462c0819:PsiDirectoryNode" />
-              <item name="contents" type="462c0819:PsiDirectoryNode" />
-              <item name="6_OpenAI_gym" type="462c0819:PsiDirectoryNode" />
+              <item name="choice_net" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -446,7 +409,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="PyScientificConfigurable" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -476,26 +439,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.main_test">
-    <configuration name="30_predict_model" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="MyProject" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/My_demo/Tensorflow_demo" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/My_demo/Tensorflow_demo/30_predict_model.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
+  <component name="RunManager" selected="Python.main">
     <configuration name="DQN_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="MyProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -515,7 +459,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="env_test (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="MyProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -523,31 +467,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/is_for_import" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/My_demo/choice_net" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/is_for_import/env_test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="env_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="MyProject" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/My_demo/0203_reinforcement_demo/test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/My_demo/0203_reinforcement_demo/test/env_test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/My_demo/choice_net/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -572,20 +497,58 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="test7" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="MyProject" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/My_demo/Tensorflow_demo" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/My_demo/Tensorflow_demo/test7.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="test_tem" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="MyProject" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/My_demo/choice_net" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/My_demo/choice_net/test_tem.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <list>
-      <item itemvalue="Python.30_predict_model" />
-      <item itemvalue="Python.env_test" />
       <item itemvalue="Python.DQN_test" />
-      <item itemvalue="Python.env_test (1)" />
       <item itemvalue="Python.main_test" />
+      <item itemvalue="Python.test_tem" />
+      <item itemvalue="Python.main" />
+      <item itemvalue="Python.test7" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main" />
+        <item itemvalue="Python.test7" />
+        <item itemvalue="Python.test_tem" />
         <item itemvalue="Python.main_test" />
         <item itemvalue="Python.DQN_test" />
-        <item itemvalue="Python.env_test (1)" />
-        <item itemvalue="Python.env_test" />
-        <item itemvalue="Python.30_predict_model" />
       </list>
     </recent_temporary>
   </component>
@@ -617,10 +580,11 @@
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32870865" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="right" x="0" y="0" width="270" height="600" id="Documentation" side_tool="true" weight="0.3296875" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32894737" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.27448276" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32870865" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.19724138" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.24275862" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32870865" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1375" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
@@ -628,8 +592,9 @@
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" auto_hide="true" x="651" y="79" width="618" height="721" id="SciView" order="3" show_stripe_button="false" type="FLOATING" weight="0.3290735" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Concurrent Activities Diagram" weight="0.32965517" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.32551724" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.32965517" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -754,28 +719,28 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/is_for_import/DQN_test.py</url>
-          <line>192</line>
+          <line>197</line>
           <option name="timeStamp" value="185" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/My_demo/0203_reinforcement_demo/test/main_test.py</url>
-          <line>43</line>
-          <option name="timeStamp" value="194" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/is_for_import/DQN_test.py</url>
-          <line>105</line>
+          <line>111</line>
           <option name="timeStamp" value="195" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/is_for_import/DQN_test.py</url>
-          <line>183</line>
+          <line>188</line>
           <option name="timeStamp" value="197" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/is_for_import/DQN_test.py</url>
-          <line>187</line>
+          <line>192</line>
           <option name="timeStamp" value="198" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/My_demo/choice_net/main.py</url>
+          <line>197</line>
+          <option name="timeStamp" value="205" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -785,68 +750,10 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="199" />
+      <option name="time" value="208" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Skeleton Based Human Action/ntu_database_part/README.txt" />
-    <entry file="file://$PROJECT_DIR$/My_demo/Tensorflow_demo/test7.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="640">
-          <caret line="117" column="52" selection-start-line="117" selection-start-column="52" selection-end-line="117" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/My_demo/Tensorflow_demo/test8_tensorflow_on_skeleton.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="640">
-          <caret line="58" column="44" selection-start-line="58" selection-start-column="44" selection-end-line="58" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda3/envs/winter2/lib/python3.5/site-packages/keras/utils/vis_utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="44" column="55" selection-start-line="44" selection-start-column="55" selection-end-line="44" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda3/envs/winter2/lib/python3.5/site-packages/pydot.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1088">
-          <caret line="1635" column="8" selection-start-line="1635" selection-start-column="8" selection-end-line="1635" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Caches/PyCharm2018.1/python_stubs/661292816/builtins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="4911" column="3" selection-start-line="4911" selection-start-column="3" selection-end-line="4911" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/My_demo/Tensorflow_demo/test_time.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="3" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test2.py" />
-    <entry file="file://$PROJECT_DIR$/test.py" />
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/My_demo/Tensorflow_demo/reinforcement_demo/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/My_demo/Tensorflow_demo/reinforcement_demo/test/1_flyingBird.py" />
-    <entry file="file://$PROJECT_DIR$/My_demo/Tensorflow_demo/reinforcement_demo/test/2_FlyingBird_main.py" />
-    <entry file="file://$PROJECT_DIR$/Tutor/reinforcement_learning_MoFan/contents/5_Deep_Q_Network/run_this.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/anaconda3/envs/winter2/lib/python3.5/site-packages/keras/engine/sequential.py" />
     <entry file="file://$PROJECT_DIR$/Tutor/reinforcement_learning_MoFan/contents/5_Deep_Q_Network/RL_brain.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -896,31 +803,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/My_demo/Tensorflow_demo/test9_keras_try.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="17" selection-start-line="17" selection-end-line="26" selection-end-column="44" />
-          <folding>
-            <element signature="e#18#42#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/My_demo/Tensorflow_demo/winter_first_test.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/My_demo/0203_reinforcement_demo/test/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/My_demo/Tensorflow_demo/test10_nonsequence.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="58" column="4" selection-start-line="58" selection-start-column="4" selection-end-line="58" selection-end-column="44" />
-          <folding>
-            <element signature="e#18#42#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/My_demo/Tensorflow_demo/30_predict_model.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -928,16 +815,6 @@
           <caret line="107" selection-start-line="107" selection-end-line="107" selection-end-column="52" />
           <folding>
             <element signature="e#20#44#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/My_demo/Tensorflow_demo/test11_frame_choose.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="106" selection-start-line="106" selection-end-line="106" selection-end-column="89" />
-          <folding>
-            <element signature="e#18#42#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -963,13 +840,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/anaconda3/envs/winter2/lib/python3.5/site-packages/keras/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="287" selection-start-line="287" selection-end-line="287" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1859">
@@ -977,30 +847,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/My_demo/0203_reinforcement_demo/test/env_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="213" column="20" selection-start-line="213" selection-start-column="20" selection-end-line="213" selection-end-column="20" />
-          <folding>
-            <element signature="e#18#29#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/anaconda3/envs/winter2/lib/python3.5/site-packages/tensorflow/python/client/session.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="185">
           <caret line="700" selection-start-line="700" selection-end-line="700" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/My_demo/0203_reinforcement_demo/from_others/a_dqn_with_keras_demo/DQN.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="49" column="20" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#68#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1017,32 +867,11 @@
     <entry file="file://$PROJECT_DIR$/is_for_import/model1_eval.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/My_demo/0203_reinforcement_demo/test/DQN_net_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-357">
-          <caret line="25" column="36" lean-forward="true" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/My_demo/0203_reinforcement_demo/from_others/a_dqn_with_keras_demo/maze_env.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <folding>
             <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/is_for_import/env_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="746">
-          <caret line="59" column="70" lean-forward="true" selection-start-line="59" selection-start-column="70" selection-end-line="59" selection-end-column="70" />
-          <folding>
-            <element signature="e#18#29#0" expanded="true" />
-            <element signature="e#4730#7646#0" />
           </folding>
         </state>
       </provider>
@@ -1061,37 +890,250 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/My_demo/0203_reinforcement_demo/test/DQN_demo.py">
+    <entry file="file://$PROJECT_DIR$/is_for_import/model1_target.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/My_demo/0210_DQN/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/is_for_import/DQN.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/is_for_import/DQN_final.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="469">
-          <caret line="116" lean-forward="true" selection-start-line="116" selection-end-line="116" />
+        <state relative-caret-position="383">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="e#18#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/My_demo/0203_reinforcement_demo/test/DQN_net_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-802">
+          <caret line="25" column="36" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/is_for_import/model1_target.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/My_demo/0203_reinforcement_demo/test/main_test.py">
+    <entry file="file://$PROJECT_DIR$/My_demo/0203_reinforcement_demo/test/main_exam.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="76" column="16" lean-forward="true" selection-start-line="76" selection-start-column="16" selection-end-line="76" selection-end-column="16" />
+        <state relative-caret-position="306">
+          <caret line="275" lean-forward="true" selection-start-line="275" selection-end-line="275" />
           <folding>
-            <element signature="e#18#67#0" expanded="true" />
+            <element signature="e#846#8957#0" />
+            <element signature="e#846#915#0" />
+            <element signature="e#1292#1545#0" />
+            <element signature="e#1641#1964#0" />
+            <element signature="e#2084#2857#0" />
+            <element signature="e#2937#3209#0" />
+            <element signature="e#3279#5212#0" />
+            <element signature="e#5275#8191#0" />
+            <element signature="e#8498#8821#0" />
+            <element signature="e#1047#3034#0" />
+            <element signature="e#10285#11070#0" />
+            <element signature="e#10921#11626#0" />
+            <element signature="e#11304#12047#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/is_for_import/DQN_test.py">
+    <entry file="file://$PROJECT_DIR$/is_for_import/env_final.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="46" column="6" lean-forward="true" selection-start-line="46" selection-start-column="6" selection-end-line="46" selection-end-column="6" />
+        <state relative-caret-position="289">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
           <folding>
             <element signature="e#18#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/My_demo/0203_reinforcement_demo/test/finish_evaluate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29">
+          <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
+          <folding>
+            <element signature="e#500#8503#0" />
+            <element signature="e#8519#10045#0" />
+            <element signature="e#10094#10879#0" />
+            <element signature="e#10935#11270#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/is_for_import/env_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="55" lean-forward="true" selection-start-line="11" selection-start-column="55" selection-end-line="11" selection-end-column="55" />
+          <folding>
+            <element signature="e#18#29#0" expanded="true" />
+            <element signature="e#1202#1370#0" />
+            <element signature="e#1551#1874#0" />
+            <element signature="e#1994#2767#0" />
+            <element signature="e#2502#2772#0" />
+            <element signature="e#2839#4670#0" />
+            <element signature="e#4730#7646#0" />
+            <element signature="e#8163#8356#0" />
+            <element signature="e#8401#8491#0" />
+            <element signature="e#7948#8271#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/My_demo/0203_reinforcement_demo/from_others/a_dqn_with_keras_demo/DQN.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="523">
+          <caret line="49" column="20" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#68#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/is_for_import/main_exam.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/is_for_import/DQN_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="161" column="16" selection-start-line="161" selection-start-column="16" selection-end-line="161" selection-end-column="16" />
+          <folding>
+            <element signature="e#18#29#0" expanded="true" />
+            <element signature="e#1535#2056#0" />
             <element signature="e#2103#2205#0" />
+            <element signature="e#3918#4252#0" />
             <element signature="e#4262#4731#0" />
+            <element signature="e#4798#5120#0" />
+            <element signature="e#6373#7189#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/My_demo/0203_reinforcement_demo/test/env_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="19" />
+          <folding>
+            <element signature="e#18#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/My_demo/0203_reinforcement_demo/test/model1_eval.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/My_demo/0203_reinforcement_demo/test/main_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="46" selection-start-line="46" selection-end-line="46" selection-end-column="26" />
+          <folding>
+            <element signature="e#18#69#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/My_demo/0203_reinforcement_demo/test/DQN_demo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="469">
+          <caret line="116" selection-start-line="116" selection-end-line="116" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/is_for_import/finish_env.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="45" column="57" selection-start-line="45" selection-start-column="57" selection-end-line="45" selection-end-column="57" />
+          <folding>
+            <element signature="e#559#812#0" />
+            <element signature="e#908#1231#0" />
+            <element signature="e#1350#2123#0" />
+            <element signature="e#2203#2475#0" />
+            <element signature="e#2544#4477#0" />
+            <element signature="e#4539#7455#0" />
+            <element signature="e#7516#7709#0" />
+            <element signature="e#7895#8218#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/My_demo/Tensorflow_demo/test6.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/My_demo/Tensorflow_demo/test7.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1038">
+          <caret line="166" column="21" selection-start-line="166" selection-start-column="21" selection-end-line="166" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/My_demo/Tensorflow_demo/test11_frame_choose.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-535">
+          <caret line="106" selection-start-line="106" selection-end-line="106" selection-end-column="89" />
+          <folding>
+            <element signature="e#18#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/My_demo/Tensorflow_demo/test10_nonsequence.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="76" column="13" selection-start-line="76" selection-start-column="13" selection-end-line="76" selection-end-column="13" />
+          <folding>
+            <element signature="e#18#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/My_demo/Tensorflow_demo/test8_tensorflow_on_skeleton.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="83" column="21" lean-forward="true" selection-start-line="83" selection-start-column="21" selection-end-line="83" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/My_demo/Tensorflow_demo/test9_keras_try.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="14" lean-forward="true" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+          <folding>
+            <element signature="e#18#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/My_demo/choice_net/test_tem.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="8" lean-forward="true" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
+          <folding>
+            <element signature="e#18#69#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/winter2/lib/python3.5/site-packages/keras/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-347">
+          <caret line="880" column="53" selection-start-line="880" selection-start-column="53" selection-end-line="880" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/My_demo/choice_net/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="189" column="1" selection-start-line="189" selection-start-column="1" selection-end-line="189" selection-end-column="1" />
+          <folding>
+            <element signature="e#18#69#0" expanded="true" />
+            <element signature="e#855#2105#0" />
+            <element signature="e#2780#3026#0" />
           </folding>
         </state>
       </provider>

@@ -24,12 +24,10 @@ from keras.optimizers import RMSprop ,adam
 from keras import backend as K
 
 np.random.seed(1)
+os.environ['PATH'] = os.environ['PATH'] + ":/Users/Waybaba/anaconda3/envs/winter2/bin"  # 修改环境变量，因为绘图的时候要调用一个底层的命令，而那个命令因为一些错误没有装在系统命令下，所以在这里提前把路径加上，这是在winter2的conda环境下面，如果删除环境，也会导致出错
 
-
-os.environ['PATH'] = os.environ[
-                         'PATH'] + ":/Users/Waybaba/anaconda3/envs/winter2/bin"  # 修改环境变量，因为绘图的时候要调用一个底层的命令，而那个命令因为一些错误没有装在系统命令下，所以在这里提前把路径加上，这是在winter2的conda环境下面，如果删除环境，也会导致出错
-
-
+# Parameters
+DQN_model_save_path = "model_backup/model1.h5"
 
 class DQN:
     def __init__(
@@ -40,10 +38,10 @@ class DQN:
             reward_decay=0.9, # 下一步的rewar的衰减值
             e_greedy=0.9, # e是按网络选择的概率，相当于探索新路和按网络走的比值了。然后这里有两个设置方法A：递增，那么e_greedy就是最大值，increment就是增长率，每次learn之后都会增加 B：固定值，如果increment是None，那么就固定在e_greedy
             e_greedy_increment=None,
-            replace_target_iter=300, # 慢更的iter阀值次数
-            memory_size=2000,# 总的存储状态数
-            batch_size=256,#每次抽的数量
-            output_graph=False,
+            replace_target_iter=5, # 慢更的iter阀值次数
+            memory_size=5000,# 总的存储状态数
+            batch_size=1024,#每次抽的数量
+            train_epotch = 5
     ):
         self.n_actions = n_actions
         self.n_features = n_features
@@ -55,11 +53,9 @@ class DQN:
         self.batch_size = batch_size
         self.epsilon_increment = e_greedy_increment
         self.epsilon = 0 if e_greedy_increment is not None else self.epsilon_max
-
         self.learn_step_counter = 0
-
         self.memory = [None]*self.memory_size
-
+        self.train_epotch = train_epotch
         self._build_net()
 
     def target_replace_op(self):
@@ -68,31 +64,41 @@ class DQN:
         print("params has changed")
 
     def _build_net(self):
-        # 构建evaluation网络
+        # evaluation网络
         eval_inputs = [Input(shape=(50,75,)),Input(shape=[30,75,]),Input(shape=[50,])]
-        x = LSTM(units=64,return_sequences=0)(eval_inputs[0])
+        x = LSTM(units=50,return_sequences=0)(eval_inputs[0])
         x1 = Dense(units=50,activation='relu')(x)
-        x = LSTM(units=64, return_sequences=0)(eval_inputs[1])
+        # x1 = Dense(units=50,activation='relu')(x1)
+        x = LSTM(units=30, return_sequences=0)(eval_inputs[1])
         x2 = Dense(units=50, activation='relu')(x)
+        # x2 = Dense(units=50,activation='relu')(x2)
         x_whole = Concatenate()([x1,x2,eval_inputs[2]])
         # x_repeat = RepeatVector(n=30)(x_whole)
-        self.q_eval = Dense(units=60,activation='softmax')(x_whole)
+        x_whole = Dense(units=60, activation="relu")(x_whole)
+        x_whole = Dense(units=60, activation="relu")(x_whole)
+        self.q_eval = Dense(units=60,activation='tanh')(x_whole)
 
-        # 构建target网络，注意这个target层输出是q_next而不是，算法中的q_target
+        # target网络---注意这个target层输出是q_next而不是，算法中的q_target
         target_inputs = [Input(shape=(50, 75,)), Input(shape=[30, 75, ]), Input(shape=[50, ])]
-        x = LSTM(units=64, return_sequences=0)(target_inputs[0])
+        x = LSTM(units=50, return_sequences=0)(target_inputs[0])
         x1 = Dense(units=50, activation='relu')(x)
-        x = LSTM(units=64, return_sequences=0)(target_inputs[1])
+        # x1 = Dense(units=50, activation='relu')(x1)
+        x = LSTM(units=30, return_sequences=0)(target_inputs[1])
         x2 = Dense(units=50, activation='relu')(x)
+        # x2 = Dense(units=50, activation='relu')(x2)
         x_whole = Concatenate()([x1, x2, target_inputs[2]])
         # x_repeat = RepeatVector(30)(x_whole)
-        self.q_next = Dense(units=60, activation='softmax')(x_whole)
+        x_whole = Dense(units=60,activation="relu")(x_whole)
+        x_whole = Dense(units=60, activation="relu")(x_whole)
+        self.q_next = Dense(units=60, activation='tanh')(x_whole)
+
 
         self.model1 = Model(eval_inputs, self.q_eval)
         self.model2 = Model(target_inputs, self.q_next)
         rmsprop = RMSprop(lr=self.lr)
         self.model1.compile(loss='mean_squared_error', optimizer=rmsprop, metrics=['accuracy'])
         self.model2.compile(loss='mean_squared_error', optimizer=rmsprop, metrics=['accuracy'])
+
         plot_model(self.model1, to_file="model1_eval.png", show_layer_names=True, show_shapes=True)
         plot_model(self.model2, to_file="model1_target.png", show_layer_names=True, show_shapes=True)
 
@@ -142,7 +148,6 @@ class DQN:
         if self.learn_step_counter % self.replace_target_iter == 0:
             self.target_replace_op()
             print('\ntarget_params_replaced\n')
-
         # 抽样
         if self.memory_counter > self.memory_size:
             sample_index = np.random.choice(self.memory_size, size=self.batch_size)#choice可以在第一个para范围内抽出pata_2个数作为列表
@@ -201,8 +206,12 @@ class DQN:
         q_target[batch_index, eval_act_index] = reward + self.gamma * np.max(q_next,axis=1)  # 这句十分关键，总结起来是一句话：用下一时刻的慢更新网络的最大action期望（就是value表的最大值）来修正本时刻快更新网络的生成值。
 
         # 正常的拟合
-        self.model2.fit([s_whole,s_part,s_mask], q_target, epochs=10)
+        self.model2.fit([s_whole,s_part,s_mask], q_target, epochs=self.train_epotch)
         self.epsilon = self.epsilon + self.epsilon_increment if self.epsilon < self.epsilon_max else self.epsilon_max
         self.learn_step_counter += 1
+    def end(self):
+        self.model2.save(DQN_model_save_path)
+
+
 # tem_net = DQN()
 # tem_net._build_net()
