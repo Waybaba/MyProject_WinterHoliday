@@ -20,6 +20,7 @@ import numpy as np
 os.environ['PATH']=os.environ['PATH']+":/Users/Waybaba/anaconda3/envs/winter2/bin"  #修改环境变量，因为绘图的时候要调用一个底层的命令，而那个命令因为一些错误没有装在系统命令下，所以在这里提前把路径加上，这是在winter2的conda环境下面，如果删除环境，也会导致出错
 
 
+
 class ModelChoose:
     def __init__(self):
         self.model_path = "model_backup/"
@@ -28,34 +29,33 @@ class ModelChoose:
 
     def __build_net__(self):
         # 构建模型/网络
-        # input
         inputs_data = layers.Input(shape=(50,75,))
         inputs_reward = layers.Input(shape=(1,))
         inputs_target = layers.Input(shape=(50,))
 
-        # net
         x = layers.LSTM(units=128,batch_input_shape=(None, 50, 75), return_sequences=0)(inputs_data)
         x = layers.Dense(128, activation='relu')(x)
         predictions = layers.Dense(50, activation='sigmoid')(x)
 
-        # model_choose
         model_choose = Model(inputs=inputs_data,outputs=predictions)
 
-        # loss
         def lambda_fuc_1(inputx):
             predictions,inputs_target,inputs_reward = inputx
             result = K.mean(K.square(predictions-inputs_target))*(inputs_reward)
             # return K.flatten(inputs_reward+1)
             return result
-        output_loss = layers.Lambda(function=lambda_fuc_1)([predictions, inputs_target, inputs_reward])
+        # output_loss = layers.Lambda(function=lambda_fuc_1)([predictions, inputs_target, inputs_reward])
+        output_loss = predictions
         # output_loss = layers.Lambda(lambda x: ((x[0]-x[1])**2)*x[2])([predictions, inputs_target, inputs_reward])
 
-        # model_for_train
         model_for_train = Model(inputs=[inputs_data,inputs_target,inputs_reward],outputs=[output_loss,predictions])
 
-        # summary
+
+        # choose_index = choose_index_model(input_whole)
+
         model_choose.summary()
         model_for_train.summary()
+
         plot_model(model_choose, to_file="model_image/choose_model.png", show_layer_names=True, show_shapes=True)
         plot_model(model_for_train, to_file="model_image/choose_model_for_trian.png", show_layer_names=True, show_shapes=True)
 
@@ -65,18 +65,19 @@ class ModelChoose:
         def lambda_y(y_true, y_pred):
             result = K.zeros_like(y_pred)
             return result
-        losses = [
-            lambda_x,  # loss is computed in Lambda layer
-            lambda_y # we only include this for the metrics
-        ]
         model_choose.compile(optimizer='rmsprop',
                       loss='categorical_crossentropy',
                       metrics=['accuracy']
                       )
+        losses = [
+            lambda_x,  # loss is computed in Lambda layer
+            lambda_y # we only include this for the metrics
+        ]
         model_for_train.compile(
             # optimizer='rmsprop',
-            optimizer='rmsprop',
+            optimizer=optimizers.Adam(lr=0.01),
                       loss = losses,
+                    # metrics=['accuracy']
                      )
         return model_choose,model_for_train
 
@@ -239,48 +240,35 @@ class ModelPredict20:
         self.model = models.load_model(filepath=self.model_path+load_name+"model_predict.h5")
         print("load predict model from: " + self.model_path+load_name+"model_predict.h5")
 
+
 def get_random_data(data,label,size):
     random_start = int(np.random.random()*(data.shape[0]-size-1))
     random_over = random_start+size
     return data[random_start:random_over],label[random_start:random_over]
 
-choose_train_once_num = 5
-choose_train_times = 100
+choose_train_once_num = 256
+choose_train_times = 20
 main_verbose = False
 load_name = "test"
-save_name = "test2"
+save_name = "test"
 
 if __name__ == "__main__":
     # load date
-    input_train, lable_train, input_test, lable_test = ntu.load_date("40_actions")
-    input_train = input_train.reshape((-1, 50, 75))
-    input_test = input_test.reshape((-1, 50, 75))
-    lable_train = ntu.change_into_muti_dim(lable_train)
-    lable_test = ntu.change_into_muti_dim(lable_test)
-    print('input_train shape:', input_train.shape)
-    print('input_test shape:', input_test.shape)
-
-    # init
+    # input_train, lable_train, input_test, lable_test = ntu.load_date("40_actions")
+    # input_train = input_train.reshape((-1, 50, 75))
+    # input_test = input_test.reshape((-1, 50, 75))
+    # lable_train = ntu.change_into_muti_dim(lable_train)
+    # lable_test = ntu.change_into_muti_dim(lable_test)
+    # print('input_train shape:', input_train.shape)
+    # print('input_test shape:', input_test.shape)
+    #
+    # # init
     model_choose = ModelChoose()
     model_predict_20 = ModelPredict20()
     model_choose.load_model(load_name)
     model_predict_20.load_model(load_name)
-
-    # train model_predict randomly, 可以多次训练，但最好吧样本重新打乱
-    # model_predict_20.train_by_random_choose(input_train,lable_train,epotch=1)
-    # model_predict_20.train_by_random_choose(input_train, lable_train, epotch=1)
-
-
-    # # turn 50 to 20, get mask_now
-    # data_20,mask_now = model_choose.choose_frame(input_train)
-    # # get right flag
-    # right_flag = model_predict_20.get_right_flag(data_20,label=lable_train)
     #
-    # # date_50 is input, mask_now is label, right flag help to rejust loss
-    # # train model_choose
-    # model_choose.train(data=input_train,target=mask_now,reward=right_flag,epotch=1)
-
-    round_of_dule = 100
+    # round_of_dule = 3
     # for round_count in range(round_of_dule):
     #     # train choose_model for ... rounds
     #     for i in range(choose_train_times):
@@ -290,25 +278,19 @@ if __name__ == "__main__":
     #         chose_data_20,chose_mask_now = model_choose.choose_frame(data=chose_data)
     #         chose_right_flag = model_predict_20.get_right_flag(data=chose_data_20,label=chose_label)
     #         model_choose.train(data=chose_data,target=chose_mask_now,reward=chose_right_flag,epotch=1)
-    #
-    #     # turn to 20
-    #     data_20, _ = model_choose.choose_frame(input_train[-3000:])
-    #
     #     # trian predict model
-    #     model_predict_20.train(data=data_20,label=lable_train[-3000:],epotch=2)
+    #     data_20,_ = model_choose.choose_frame(input_train)
+    #     # model_predict_20.train(data=data_20,label=lable_train,epotch=2)
     #
+    #     # eval
     #     print("--------------------------------------------")
     #     print("Duel Train Round "+str(round_count)+" Over !")
-    #
-    #     # eval with 20
-    #     model_predict_20.evalue(data=data_20,label=lable_train[-3000:])
-    #     model_predict_20.evalue_random_50choose(data=input_train[-3000:],label=lable_train[-3000:])
-    data_20, _ = model_choose.choose_frame(input_train)
-    model_predict_20.evalue(data=data_20, label=lable_train)
-    model_predict_20.evalue_random_50choose(data=input_train, label=lable_train)
-    # save model
+    #     model_predict_20.evalue(data=data_20,label=lable_train)
+    #     model_predict_20.evalue_random_50choose(data=input_train,label=lable_train)
     model_choose.end(save_name)
     model_predict_20.end(save_name)
+
+
 
     # evaluate
     # model_predict_20.evalue_random_50choose(input_train, lable_train)
