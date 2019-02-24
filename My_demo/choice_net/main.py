@@ -248,7 +248,7 @@ choose_train_once_num = 5
 choose_train_times = 100
 main_verbose = False
 load_name = "test"
-save_name = "test2"
+save_name = "test3"
 
 if __name__ == "__main__":
     # load date

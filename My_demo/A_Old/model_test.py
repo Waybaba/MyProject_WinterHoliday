@@ -4,7 +4,7 @@ from keras import optimizers
 from keras import losses
 from keras import metrics
 
-构建模型/网络
+#构建模型/网络
 model = models.Sequential()
 model.add(layers.Dense(16,activation='relu',input_shape=(10000,0)) )
 model.add(layers.Dense(16,activation='relu'))

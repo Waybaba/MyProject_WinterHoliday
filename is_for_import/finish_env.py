@@ -160,6 +160,7 @@ class frameChooseEnv:
         # for each in new_index:
         # new_mask[int(each)] = 1
         return mask
+
     def get_reward_from_frames(self, chose_frames):
         predict = self.predict_model.predict(x=chose_frames[np.newaxis, :])
         if np.argmax(predict) == np.argmax(self.predict_target):

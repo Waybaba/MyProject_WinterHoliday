@@ -15,7 +15,7 @@ os.environ['PATH']=os.environ['PATH']+":/Users/Waybaba/anaconda3/envs/winter2/bi
 #
 # input_train = input_train.reshape((-1,50,75))#数据整形，然后输入
 # input_test = input_test.reshape((-1,50,75))
-input_train,lable_train,input_test,lable_test =ntu.load_date("40_actions")
+input_train,lable_train,input_test,lable_test =ntu.load_date("4_actions")
 # ntusee.show_gif(input_train[1])
 
 
@@ -46,7 +46,7 @@ model.add(layers.LSTM(
 # model.add(layers.Dense(8, activation='relu'))
 # model.add(layers.Dense(4, activation='relu'))
 model.add(layers.Dense(128,activation='relu'))
-model.add(layers.Dense(40,activation='softmax'))
+model.add(layers.Dense(4,activation='softmax'))
 model.summary()
 # plot_model(model, to_file='model.png')
 #编译步骤

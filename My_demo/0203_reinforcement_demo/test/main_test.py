@@ -35,7 +35,7 @@ def run_env():
 
             # break while loop when end of this episode
             time_count += 1
-            if time_count>200:
+            if time_count>100:
                 time_count = 0
                 break
             step += 1

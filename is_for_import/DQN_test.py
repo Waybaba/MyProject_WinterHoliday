@@ -206,7 +206,7 @@ class DQN:
         q_target[batch_index, eval_act_index] = reward + self.gamma * np.max(q_next,axis=1)  # 这句十分关键，总结起来是一句话：用下一时刻的慢更新网络的最大action期望（就是value表的最大值）来修正本时刻快更新网络的生成值。
 
         # 正常的拟合
-        self.model2.fit([s_whole,s_part,s_mask], q_target, epochs=self.train_epotch)
+        self.model2.fit(x=[s_whole,s_part,s_mask], y=q_target, epochs=self.train_epotch)
         self.epsilon = self.epsilon + self.epsilon_increment if self.epsilon < self.epsilon_max else self.epsilon_max
         self.learn_step_counter += 1
     def end(self):

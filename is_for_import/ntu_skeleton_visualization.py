@@ -65,8 +65,8 @@ def get_date_list(n=50):
 """
 #可调参数
 
-def show_old(date_list):
-    frame_sum=50#要纳入的帧数
+def show_old(date_list,time_interval=0.05):
+    frame_sum=date_list.shape[0]#要纳入的帧数
     #调取函数，从文件中获取数据
     # 绘图初始化
     fig = plt.figure()
@@ -78,13 +78,12 @@ def show_old(date_list):
         fig.clf()#清空原来的
         fig.suptitle("3D Skeletion ")#标题
             # fig.suptitle("三维动态散点图", fontproperties=myfont)#这样写可以输入中文，但是我没有字体
-        point_count = 100
         ax = fig.add_subplot(111, projection="3d")
         #点绘图
-        ax.scatter(date_list[frame][2][3], date_list[frame][0][3], date_list[frame][1][3], c="r", s=500, marker="o")#画头部，因为特别，所以画大点
+        ax.scatter(date_list[frame][2][3], date_list[frame][0][3], date_list[frame][1][3], c="r", s=200, marker="o")#画头部，因为特别，所以画大点
         ax.scatter(date_list[frame][2],date_list[frame][0],date_list[frame][1])#画其他joints
         #点标签
-        for point_index in range(20):
+        for point_index in range(25):
             # #配置单点的数据
             x = date_list[frame][2][point_index]
             y = date_list[frame][0][point_index]
@@ -94,10 +93,10 @@ def show_old(date_list):
             # scale = np.random.random(point_count) * 100
             label = str(point_index)
             # # 标上点
-            # ax.scatter(x, y, z, s=point_index, c='r', marker="o",label="123")
-            # ax.text(x,y,z,label)
+            ax.scatter(x, y, z, s=point_index, c='r', marker="o",label="123")
+            # ax.text(x,y,z,point_index)
         # 线绘图
-        line_index = [17,18,18,19,13,14,14,15,1,2,2,3,3,4]
+        line_index = [17,18,18,19,13,14,14,15,1,2,2,3,4,5,5,6,8,9,9,10,0,1,16,17,12,13]
         for line_number in range( len(line_index) ):
             if line_number%2==0 :
                 ax.plot(
@@ -114,7 +113,7 @@ def show_old(date_list):
         ax.set_ylim(-4, -1)
         ax.set_zlim(0, 2)
         # 暂停
-        plt.pause(0.05)
+        plt.pause(time_interval)
 
     # 关闭交互模式
     plt.ioff()
@@ -125,13 +124,19 @@ def show_old(date_list):
     plt.show()#通常做法，但因为是动画，好像交互模式里面就已经涵盖了这种做法
 
 
-def show_gif(x):
-    date_list = np.zeros(shape=(50, 3, 25))
-    for index in range(50):
+def show_gif(x,time_interval=0.05):
+    frame_num = x.shape[0]
+    date_list = np.zeros(shape=(frame_num, 3, 25))
+    for index in range(frame_num):
         date_list[index] = x[index].T
-    show_old(date_list)
-def test():
-    input_train, lable_train, input_test, lable_test = ntu.load_date("4_actions")
-    show_gif(input_train[0])
+    show_old(date_list,time_interval=time_interval)
 
-# test()
+
+
+
+
+if __name__ == "__main__":
+    input_train, lable_train, input_test, lable_test = ntu.load_date("4_actions")
+    show_gif(input_train[12])
+
+
