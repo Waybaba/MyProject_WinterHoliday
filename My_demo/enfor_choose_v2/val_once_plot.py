@@ -9,6 +9,7 @@ import is_for_import.ntu_date_preprocess_2 as ntu
 import os
 from My_demo.enfor_choose_v2.env import frameChooseEnv
 from My_demo.enfor_choose_v2.DQN import DQN
+import matplotlib.pyplot as plt
 import copy
 
 
@@ -72,4 +73,21 @@ if __name__ == "__main__":
     print('input_train shape:', input_train.shape)
     print('input_test shape:', input_test.shape)
 
-    evaluate(input_train[600:700],lable_train[600:700])
+    i = 204
+    env = frameChooseEnv()
+    RL = DQN()
+    predict = predict_once(input_frames=input_train[i], input_lable=lable_train[i], env=env, RL=RL)
+
+    print(predict)
+
+    x_axis = np.linspace(0,40, 40)
+    print(lable_train[i].argmax())
+    predict = predict.flatten()
+    plt.plot(x_axis, predict, 'r-',label="prob")
+    # plt.plot(xnew, power_smooth, 'b-', label='loss')
+    # plt.plot(x,show_activity_rate(old_sequence),"g-",label="activity")
+    plt.title('Prob - Action')
+    plt.xlabel('Action')
+    plt.ylabel('Prob')
+    plt.legend()
+    plt.show()

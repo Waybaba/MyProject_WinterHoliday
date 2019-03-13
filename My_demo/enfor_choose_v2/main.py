@@ -7,15 +7,15 @@ import numpy as np
 
 os.environ['PATH']=os.environ['PATH']+":/Users/Waybaba/anaconda3/envs/winter2/bin"  #修改环境变量，因为绘图的时候要调用一个底层的命令，而那个命令因为一些错误没有装在系统命令下，所以在这里提前把路径加上，这是在winter2的conda环境下面，如果删除环境，也会导致出错
 
-episode_total_num= 2000 # 一共考虑几个数据
-step_in_each_episode = 20 # 每个数据步进几次
+episode_total_num= 200000 # 一共考虑几个数据
+step_in_each_episode = 30 # 每个数据步进几次
 
-step_for_learning = step_in_each_episode*20 # 多少步学一次
-step_for_validating = step_for_learning*5 # 多少步检测一次
+step_for_learning = step_in_each_episode*100 # 多少步学一次
+step_for_validating = step_for_learning*10 # 多少步检测一次
 
 memory_size = step_for_learning*3 # 总的存数据量，学习量的3倍吧，每次更新1/3
 
-replace_target_iter = 3 # 学几次更新target网络
+replace_target_iter = 2 # 学几次更新target网络
 
 
 

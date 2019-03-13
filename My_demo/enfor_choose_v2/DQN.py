@@ -65,7 +65,7 @@ class DQN:
         print("params has changed")
 
     def _build_net(self):
-        # evaluation网络
+        # evaluation网络 快更新
         eval_inputs = [Input(shape=(50,75,)),Input(shape=[30,75,]),Input(shape=[50,])]
         x = LSTM(units=50,return_sequences=0)(eval_inputs[0])
         x1 = Dense(units=50,activation='relu')(x)
@@ -80,7 +80,7 @@ class DQN:
         x_whole = layers.Reshape(target_shape=(30,3,))(x_whole)
         self.q_eval = layers.Dense(units=3,activation='softmax',use_bias=False)(x_whole)
 
-        # target网络---注意这个target层输出是q_next而不是，算法中的q_target
+        # target网络---注意这个target层输出是q_next而不是，算法中的q_target，慢更新
         target_inputs = [Input(shape=(50, 75,)), Input(shape=[30, 75, ]), Input(shape=[50, ])]
         x = LSTM(units=50, return_sequences=0)(target_inputs[0])
         x1 = Dense(units=50, activation='relu')(x)
@@ -96,8 +96,8 @@ class DQN:
         self.q_next = layers.Dense(units=3, activation='softmax', use_bias=False)(x_whole)
 
 
-        self.model1 = Model(eval_inputs, self.q_eval)
-        self.model2 = Model(target_inputs, self.q_next)
+        self.model1 = Model(eval_inputs, self.q_eval) # 快
+        self.model2 = Model(target_inputs, self.q_next) # 慢
         rmsprop = RMSprop(lr=self.lr)
         self.model1.compile(loss='mean_squared_error', optimizer=rmsprop, metrics=['accuracy'])
         self.model2.compile(loss='mean_squared_error', optimizer=rmsprop, metrics=['accuracy'])
@@ -136,7 +136,7 @@ class DQN:
             observation[0] = observation[0][np.newaxis, :]
             observation[1] = observation[1][np.newaxis, :]
             observation[2] = observation[2][np.newaxis, :]
-            actions_value = self.model1.predict(x=observation)
+            actions_value = self.model1.predict(x=observation) # 快
             action_index = np.argmax(actions_value, axis=-1)
             action_index = action_index[0]
             action = np.zeros(shape=(30, 3))
@@ -189,11 +189,15 @@ class DQN:
                                    # constraints=[],
                                    loss=loss)
 
-        self.train_fn = K.function(inputs=[self.model1.inputs[0],self.model1.inputs[1],self.model1.inputs[2],
+        self.train_fn = K.function(inputs=[self.model1.inputs[0],
+                                           self.model1.inputs[1],
+                                           self.model1.inputs[2],
                                            action_onehot_placeholder,
                                            discount_reward_placeholder],
-                                   outputs=[],
+                                   outputs=self.model1.outputs,
                                    updates=updates)
+
+
 
     def learn(self):
         # 通过这个learn，可以总结出来，网络的搭建要求是
