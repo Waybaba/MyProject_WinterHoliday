@@ -32,8 +32,8 @@ def evaluate(date_input,lable):
         print("Predict argmax is : ", end="")
         print(np.argmax(predict))
         print("Lable argmax is : ", end="")
-        print(np.argmax(lable_train[i]))
-        if np.argmax(predict) == np.argmax(lable_train[i]):
+        print(np.argmax(lable[i]))
+        if np.argmax(predict) == np.argmax(lable[i]):
             right_number += 1
     # print summary
     print("-------------------------")

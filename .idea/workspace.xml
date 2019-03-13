@@ -5,16 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="806c5a3e-9e2c-4246-ba6b-a0458ecda661" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/My_demo/enfor_choose_v2/test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/My_demo/enfor_choose_v2/val_once_plot.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/My_demo/enfor_choose_v3/vali_predict.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/My_demo/0203_reinforcement_demo/test/model_backup/model1.h5" beforeDir="false" afterPath="$PROJECT_DIR$/My_demo/0203_reinforcement_demo/test/model_backup/model1.h5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/My_demo/enfor_choose_v2/DQN.py" beforeDir="false" afterPath="$PROJECT_DIR$/My_demo/enfor_choose_v2/DQN.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/My_demo/0203_reinforcement_demo/test/finish_evaluate.py" beforeDir="false" afterPath="$PROJECT_DIR$/My_demo/0203_reinforcement_demo/test/finish_evaluate.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/My_demo/Tensorflow_demo/model_backup/30_predict_model.h5" beforeDir="false" afterPath="$PROJECT_DIR$/My_demo/Tensorflow_demo/model_backup/30_predict_model.h5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/My_demo/Tensorflow_demo/model_test_png" beforeDir="false" afterPath="$PROJECT_DIR$/My_demo/Tensorflow_demo/model_test_png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/My_demo/enfor_choose_v2/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/My_demo/enfor_choose_v2/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/My_demo/enfor_choose_v2/main_val.py" beforeDir="false" afterPath="$PROJECT_DIR$/My_demo/enfor_choose_v2/main_val.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/My_demo/enfor_choose_v2/model1_eval.png" beforeDir="false" afterPath="$PROJECT_DIR$/My_demo/enfor_choose_v2/model1_eval.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/My_demo/enfor_choose_v2/model1_target.png" beforeDir="false" afterPath="$PROJECT_DIR$/My_demo/enfor_choose_v2/model1_target.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/My_demo/enfor_choose_v2/model_backup/model1.h5" beforeDir="false" afterPath="$PROJECT_DIR$/My_demo/enfor_choose_v2/model_backup/model1.h5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/My_demo/enfor_choose_v2/val_once_plot.py" beforeDir="false" afterPath="$PROJECT_DIR$/My_demo/enfor_choose_v2/val_once_plot.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,7 +32,7 @@
     <SUITE FILE_PATH="coverage/MyProject$test_lstm_first.coverage" NAME="test_lstm_first Coverage Results" MODIFIED="1550803057180" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/My_demo/Part_Try" />
     <SUITE FILE_PATH="coverage/MyProject$network_pro_ing.coverage" NAME="network_pro_ing Coverage Results" MODIFIED="1545204136294" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Skeleton Based Human Action" />
     <SUITE FILE_PATH="coverage/MyProject$remove_miss_file.coverage" NAME="remove_miss_file Coverage Results" MODIFIED="1543575724568" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Skeleton Based Human Action" />
-    <SUITE FILE_PATH="coverage/MyProject$30_predict_model.coverage" NAME="30_predict_model Coverage Results" MODIFIED="1549598213148" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/My_demo/Tensorflow_demo" />
+    <SUITE FILE_PATH="coverage/MyProject$30_predict_model.coverage" NAME="30_predict_model Coverage Results" MODIFIED="1552478769680" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/My_demo/Tensorflow_demo" />
     <SUITE FILE_PATH="coverage/MyProject$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1544067384642" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Reinforcement Learning" />
     <SUITE FILE_PATH="coverage/MyProject$run_this.coverage" NAME="run_this Coverage Results" MODIFIED="1549339646046" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tutor/reinforcement_learning_MoFan/contents/5_Deep_Q_Network" />
     <SUITE FILE_PATH="coverage/MyProject$print_try.coverage" NAME="print_try Coverage Results" MODIFIED="1550667971739" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/My_demo/Part_Try" />
@@ -40,11 +40,11 @@
     <SUITE FILE_PATH="coverage/MyProject$main_3_dense.coverage" NAME="main_3_dense Coverage Results" MODIFIED="1550128691309" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/My_demo/choice_net" />
     <SUITE FILE_PATH="coverage/MyProject$env_test.coverage" NAME="env_test Coverage Results" MODIFIED="1549629847731" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/My_demo/0203_reinforcement_demo/test" />
     <SUITE FILE_PATH="coverage/MyProject$test9_keras_try.coverage" NAME="test9_keras_try Coverage Results" MODIFIED="1550402323197" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/My_demo/Tensorflow_demo" />
-    <SUITE FILE_PATH="coverage/MyProject$test.coverage" NAME="test Coverage Results" MODIFIED="1544891218123" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tensorflow_Demo" />
     <SUITE FILE_PATH="coverage/MyProject$model_backup.coverage" NAME="model_backup Coverage Results" MODIFIED="1545019235945" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Skeleton Based Human Action" />
     <SUITE FILE_PATH="coverage/MyProject$main_test.coverage" NAME="main_test Coverage Results" MODIFIED="1552358180101" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/My_demo/0203_reinforcement_demo/test" />
+    <SUITE FILE_PATH="coverage/MyProject$test.coverage" NAME="test Coverage Results" MODIFIED="1552479793354" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/My_demo/enfor_choose_v3" />
     <SUITE FILE_PATH="coverage/MyProject$my_basic_layer.coverage" NAME="my_basic_layer Coverage Results" MODIFIED="1545291255696" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/My_demo/Tensorflow_demo" />
-    <SUITE FILE_PATH="coverage/MyProject$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1550332435340" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/My_demo/Predict_Net" />
+    <SUITE FILE_PATH="coverage/MyProject$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1552484215575" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/My_demo/enfor_choose_v3" />
     <SUITE FILE_PATH="coverage/MyProject$skelelon_visualization.coverage" NAME="skelelon_visualization Coverage Results" MODIFIED="1543495327569" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Skeleton Based Human Action" />
     <SUITE FILE_PATH="coverage/MyProject$DDPG.coverage" NAME="DDPG Coverage Results" MODIFIED="1545032655109" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/reinforcement_learning_MoFan/experiments/Robot_arm" />
     <SUITE FILE_PATH="coverage/MyProject$04_single_hidden_layer_network.coverage" NAME="04_single_hidden_layer_network Coverage Results" MODIFIED="1544959915191" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tensorflow_Demo/tensorflow_cookbook-master/06_Neural_Networks/04_Single_Hidden_Layer_Network" />
@@ -66,7 +66,8 @@
     <SUITE FILE_PATH="coverage/MyProject$first_run_demo.coverage" NAME="first_run_demo Coverage Results" MODIFIED="1548930687907" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/My_demo/Tensorflow_demo" />
     <SUITE FILE_PATH="coverage/MyProject$test11_frame_choose.coverage" NAME="test11_frame_choose Coverage Results" MODIFIED="1549598180001" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/My_demo/Tensorflow_demo" />
     <SUITE FILE_PATH="coverage/MyProject$DQN_test.coverage" NAME="DQN_test Coverage Results" MODIFIED="1549807097845" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/is_for_import" />
-    <SUITE FILE_PATH="coverage/MyProject$main.coverage" NAME="main Coverage Results" MODIFIED="1552375445007" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/My_demo/enfor_choose_v2" />
+    <SUITE FILE_PATH="coverage/MyProject$vali_predict.coverage" NAME="vali_predict Coverage Results" MODIFIED="1552483026704" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/My_demo/enfor_choose_v3" />
+    <SUITE FILE_PATH="coverage/MyProject$main.coverage" NAME="main Coverage Results" MODIFIED="1552484053825" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/My_demo/enfor_choose_v2" />
     <SUITE FILE_PATH="coverage/MyProject$run_CartPole.coverage" NAME="run_CartPole Coverage Results" MODIFIED="1545127730495" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/reinforcement_learning_MoFan/contents/7_Policy_gradient_softmax" />
     <SUITE FILE_PATH="coverage/MyProject$RL_brain.coverage" NAME="RL_brain Coverage Results" MODIFIED="1549299010286" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tutor/reinforcement_learning_MoFan/contents/5_Deep_Q_Network" />
     <SUITE FILE_PATH="coverage/MyProject$DDPG__1_.coverage" NAME="DDPG (1) Coverage Results" MODIFIED="1545033911101" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/reinforcement_learning_MoFan/experiments/Solve_BipedalWalker" />
@@ -133,8 +134,8 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/My_demo/enfor_choose_v2/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1649">
-              <caret line="97" column="37" selection-start-line="97" selection-start-column="37" selection-end-line="97" selection-end-column="37" />
+            <state relative-caret-position="305">
+              <caret line="68" column="43" lean-forward="true" selection-start-line="68" selection-start-column="43" selection-end-line="68" selection-end-column="43" />
               <folding>
                 <element signature="e#18#72#0" expanded="true" />
               </folding>
@@ -142,67 +143,77 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="env.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/My_demo/enfor_choose_v2/env.py">
+      <file leaf-file-name="main_val.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/My_demo/enfor_choose_v3/main_val.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1581">
-              <caret line="96" column="30" selection-start-line="96" selection-start-column="30" selection-end-line="96" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tem_test.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/My_demo/enfor_choose_v2/tem_test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="235">
+              <caret line="35" column="48" selection-start-line="35" selection-start-column="48" selection-end-line="35" selection-end-column="48" />
               <folding>
-                <element signature="e#0#18#0" expanded="true" />
+                <element signature="e#57#68#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/My_demo/enfor_choose_v2/test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
-              <caret line="235" column="19" selection-start-line="235" selection-start-column="19" selection-end-line="235" selection-end-column="19" />
-              <folding>
-                <element signature="e#41#51#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main_test.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/My_demo/0203_reinforcement_demo/test/main_test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1">
-              <caret line="48" column="23" selection-start-line="48" selection-start-column="23" selection-end-line="48" selection-end-column="23" />
-              <folding>
-                <element signature="e#450#1384#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="30_predict_model.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/My_demo/Tensorflow_demo/30_predict_model.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="26" column="25" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="DQN.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/My_demo/enfor_choose_v2/DQN.py">
+        <entry file="file://$PROJECT_DIR$/My_demo/enfor_choose_v3/DQN.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1506">
-              <caret line="199" selection-start-line="199" selection-end-line="199" />
+            <state relative-caret-position="1122">
+              <caret line="66" column="8" selection-start-line="66" selection-start-column="8" selection-end-line="66" selection-end-column="8" />
               <folding>
-                <element signature="e#1564#2174#0" />
+                <element signature="e#18#29#0" expanded="true" />
+                <element signature="e#8818#11290#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="finish_evaluate.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/My_demo/0203_reinforcement_demo/test/finish_evaluate.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="173">
+              <caret line="255" column="48" lean-forward="true" selection-start-line="255" selection-start-column="48" selection-end-line="255" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="vali_predict.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/My_demo/enfor_choose_v3/vali_predict.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="325">
+              <caret line="61" column="30" lean-forward="true" selection-start-line="61" selection-start-column="30" selection-end-line="61" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="env.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/My_demo/enfor_choose_v3/env.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-153">
+              <caret line="55" selection-start-line="55" selection-end-line="55" />
+              <folding>
+                <element signature="e#18#29#0" expanded="true" />
+                <element signature="e#2962#3234#0" />
+                <element signature="e#3304#5237#0" />
+                <element signature="e#5307#8223#0" />
+                <element signature="e#8286#11202#0" />
+                <element signature="e#11264#11457#0" />
+                <element signature="e#11529#11654#0" />
+                <element signature="e#11711#11988#0" />
+                <element signature="e#12034#13002#0" />
+                <element signature="e#13041#13509#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="val_once_plot.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/My_demo/enfor_choose_v2/val_once_plot.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="36" column="48" selection-start-line="36" selection-start-column="48" selection-end-line="36" selection-end-column="48" />
+              <folding>
+                <element signature="e#57#68#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -211,8 +222,8 @@
       <file leaf-file-name="main_val.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/My_demo/enfor_choose_v2/main_val.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="59" selection-start-line="59" selection-end-line="59" />
+            <state relative-caret-position="273">
+              <caret line="35" column="48" selection-start-line="35" selection-start-column="48" selection-end-line="35" selection-end-column="48" />
               <folding>
                 <element signature="e#57#68#0" expanded="true" />
               </folding>
@@ -220,14 +231,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="model1_eval.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/My_demo/enfor_choose_v2/model1_eval.png">
-          <provider selected="true" editor-type-id="images" />
+      <file leaf-file-name="val_once_plot.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/My_demo/enfor_choose_v3/val_once_plot.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="36" column="48" selection-start-line="36" selection-start-column="48" selection-end-line="36" selection-end-column="48" />
+            </state>
+          </provider>
         </entry>
       </file>
-      <file leaf-file-name="model1_target.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/My_demo/enfor_choose_v2/model1_target.png">
-          <provider selected="true" editor-type-id="images" />
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/My_demo/enfor_choose_v3/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="353">
+              <caret line="62" column="25" selection-start-line="62" selection-start-column="25" selection-end-line="62" selection-end-column="25" />
+              <folding>
+                <element signature="e#18#72#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -241,9 +263,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>log</find>
-      <find>logit</find>
-      <find>50</find>
       <find>keep</find>
       <find>x_image</find>
       <find>rnn</find>
@@ -271,6 +290,9 @@
       <find>replace</find>
       <find>learning ...</find>
       <find>30_predict_model</find>
+      <find>30_pre</find>
+      <find>30_predict</find>
+      <find>np.argmax(lable_train[i])</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/My_demo/0203_reinforcement_demo/test/package</dir>
@@ -282,21 +304,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/My_demo/Tensorflow_demo/reinforcement_demo/test/2_FlyingBird_main.py" />
-        <option value="$PROJECT_DIR$/Tutor/reinforcement_learning_MoFan/contents/5_Deep_Q_Network/RL_brain.py" />
-        <option value="$PROJECT_DIR$/My_demo/Tensorflow_demo/reinforcement_demo/DQN.py" />
-        <option value="$PROJECT_DIR$/My_demo/Tensorflow_demo/reinforcement_demo/blogs.py" />
-        <option value="$PROJECT_DIR$/My_demo/Tensorflow_demo/reinforcement_demo/test/DQN_deomo.py" />
-        <option value="$PROJECT_DIR$/My_demo/Tensorflow_demo/test_tem.py" />
-        <option value="$PROJECT_DIR$/My_demo/Tensorflow_demo/test11_frame_choose.py" />
-        <option value="$PROJECT_DIR$/My_demo/Tensorflow_demo/30_predict_model.py" />
         <option value="$PROJECT_DIR$/My_demo/0203_reinforcement_demo/test/DQN_net_test.py" />
         <option value="$PROJECT_DIR$/is_for_import/DQN.py" />
         <option value="$PROJECT_DIR$/is_for_import/main_exam.py" />
         <option value="$PROJECT_DIR$/is_for_import/DQN_final.py" />
         <option value="$PROJECT_DIR$/is_for_import/env_final.py" />
         <option value="$PROJECT_DIR$/My_demo/0203_reinforcement_demo/test/main_exam.py" />
-        <option value="$PROJECT_DIR$/My_demo/0203_reinforcement_demo/test/finish_evaluate.py" />
         <option value="$PROJECT_DIR$/is_for_import/env_test.py" />
         <option value="$PROJECT_DIR$/My_demo/choice_net/test_tem.py" />
         <option value="$PROJECT_DIR$/My_demo/Tensorflow_demo/test10_nonsequence.py" />
@@ -328,11 +341,20 @@
         <option value="$PROJECT_DIR$/Tutor/reinforcement_learning_MoFan/contents/7_Policy_gradient_softmax/RL_brain.py" />
         <option value="$PROJECT_DIR$/is_for_import/DQN_test.py" />
         <option value="$PROJECT_DIR$/My_demo/enfor_choose_v2/env.py" />
-        <option value="$PROJECT_DIR$/My_demo/enfor_choose_v2/main_val.py" />
-        <option value="$PROJECT_DIR$/My_demo/enfor_choose_v2/val_once_plot.py" />
-        <option value="$PROJECT_DIR$/My_demo/enfor_choose_v2/main.py" />
         <option value="$PROJECT_DIR$/My_demo/enfor_choose_v2/test.py" />
         <option value="$PROJECT_DIR$/My_demo/enfor_choose_v2/DQN.py" />
+        <option value="$PROJECT_DIR$/My_demo/enfor_choose_v3/DQN.py" />
+        <option value="$PROJECT_DIR$/My_demo/enfor_choose_v3/test.py" />
+        <option value="$PROJECT_DIR$/My_demo/enfor_choose_v3/predict_model_create.py" />
+        <option value="$PROJECT_DIR$/My_demo/enfor_choose_v3/env.py" />
+        <option value="$PROJECT_DIR$/My_demo/enfor_choose_v3/main.py" />
+        <option value="$PROJECT_DIR$/My_demo/enfor_choose_v3/main_val.py" />
+        <option value="$PROJECT_DIR$/My_demo/enfor_choose_v2/main.py" />
+        <option value="$PROJECT_DIR$/My_demo/enfor_choose_v2/val_once_plot.py" />
+        <option value="$PROJECT_DIR$/My_demo/enfor_choose_v3/val_once_plot.py" />
+        <option value="$PROJECT_DIR$/My_demo/enfor_choose_v2/main_val.py" />
+        <option value="$PROJECT_DIR$/My_demo/0203_reinforcement_demo/test/finish_evaluate.py" />
+        <option value="$PROJECT_DIR$/My_demo/enfor_choose_v3/vali_predict.py" />
       </list>
     </option>
   </component>
@@ -357,22 +379,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="MyProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyProject" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyProject" type="462c0819:PsiDirectoryNode" />
-              <item name="My_demo" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="Scope">
         <subPane subId="Changed Files">
           <expand>
@@ -393,6 +399,41 @@
             <path>
               <item name="Root" type="cbb8eebc:String" user="Root" />
               <item name="MyProject" type="cbb8eebc:String" user="MyProject" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="MyProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyProject" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyProject" type="462c0819:PsiDirectoryNode" />
+              <item name="My_demo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyProject" type="462c0819:PsiDirectoryNode" />
+              <item name="My_demo" type="462c0819:PsiDirectoryNode" />
+              <item name="choice_net" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyProject" type="462c0819:PsiDirectoryNode" />
+              <item name="My_demo" type="462c0819:PsiDirectoryNode" />
+              <item name="enfor_choose_v3" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyProject" type="462c0819:PsiDirectoryNode" />
+              <item name="My_demo" type="462c0819:PsiDirectoryNode" />
+              <item name="enfor_choose_v3" type="462c0819:PsiDirectoryNode" />
+              <item name="model_backup" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -435,8 +476,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.main">
-    <configuration name="DQN" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.main (1)">
+    <configuration name="30_predict_model" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="MyProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -444,12 +485,31 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/My_demo/enfor_choose_v2" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/My_demo/Tensorflow_demo" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/My_demo/enfor_choose_v2/DQN.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/My_demo/Tensorflow_demo/30_predict_model.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="MyProject" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/My_demo/enfor_choose_v3" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/My_demo/enfor_choose_v3/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -474,7 +534,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="main_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="MyProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -482,18 +542,18 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/My_demo/0203_reinforcement_demo/test" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/My_demo/enfor_choose_v3" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/My_demo/0203_reinforcement_demo/test/main_test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/My_demo/enfor_choose_v3/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="val_once_plot" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="vali_predict" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="MyProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -501,49 +561,31 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/My_demo/enfor_choose_v2" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/My_demo/enfor_choose_v3" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/My_demo/enfor_choose_v2/val_once_plot.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/My_demo/enfor_choose_v3/vali_predict.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="Doctests in test" type="tests" factoryName="Doctests" temporary="true" nameIsGenerated="true">
-      <module name="MyProject" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/My_demo/enfor_choose_v2" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/My_demo/enfor_choose_v2/test.py" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
     </configuration>
     <list>
       <item itemvalue="Python.main" />
-      <item itemvalue="Python.val_once_plot" />
-      <item itemvalue="Python tests.Doctests in test" />
-      <item itemvalue="Python.main_test" />
-      <item itemvalue="Python.DQN" />
+      <item itemvalue="Python.main (1)" />
+      <item itemvalue="Python.30_predict_model" />
+      <item itemvalue="Python.test" />
+      <item itemvalue="Python.vali_predict" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main (1)" />
         <item itemvalue="Python.main" />
-        <item itemvalue="Python.DQN" />
-        <item itemvalue="Python.main_test" />
-        <item itemvalue="Python tests.Doctests in test" />
-        <item itemvalue="Python.val_once_plot" />
+        <item itemvalue="Python.vali_predict" />
+        <item itemvalue="Python.test" />
+        <item itemvalue="Python.30_predict_model" />
       </list>
     </recent_temporary>
   </component>
@@ -582,15 +624,16 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="7" weight="0.32870865" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="3" visible="true" weight="0.3190883" />
+      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.3190883" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.27448276" />
       <window_info anchor="bottom" id="Python Console" order="11" weight="0.32870865" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.33903134" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15105008" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15347335" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="5" weight="0.32956383" />
       <window_info anchor="bottom" id="Find" order="2" />
@@ -787,6 +830,11 @@
           <line>191</line>
           <option name="timeStamp" value="337" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/My_demo/enfor_choose_v3/test.py</url>
+          <line>70</line>
+          <option name="timeStamp" value="352" />
+        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
@@ -795,103 +843,10 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="338" />
+      <option name="time" value="356" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/My_demo/Tensorflow_demo/test9_keras_try.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="41" column="2" selection-end-line="91" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/My_demo/Skeleton Based Human Action/ntu_database_part/miss_list.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/My_demo/Skeleton Based Human Action/ntu_database_part/README.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/My_demo/Tensorflow_demo/test10_nonsequence.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="58" column="33" lean-forward="true" selection-end-line="122" selection-end-column="10" />
-          <folding>
-            <element signature="e#18#42#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/My_demo/5D_CNN/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="647">
-          <caret line="96" column="13" selection-start-line="96" selection-start-column="13" selection-end-line="96" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/My_demo/Part_Try/test1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="60" column="80" lean-forward="true" selection-start-line="60" selection-start-column="42" selection-end-line="60" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/My_demo/Part_Try/print_try.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="66" selection-start-line="1" selection-start-column="66" selection-end-line="1" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/My_demo/Part_Try/test_lstm_first.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="37" column="39" lean-forward="true" selection-start-line="37" selection-start-column="39" selection-end-line="37" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/My_demo/Part_Try/test_part_lstm_first.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="103" column="46" lean-forward="true" selection-start-line="103" selection-start-column="46" selection-end-line="103" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/is_for_import/ntu_skeleton_visualization.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="94" column="19" lean-forward="true" selection-start-line="94" selection-start-column="19" selection-end-line="94" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/My_demo/A_Old/enfor_choose_v2/DQN.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1292">
-          <caret line="216" column="22" selection-start-line="216" selection-start-column="22" selection-end-line="216" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/is_for_import/finish_env.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="44" column="11" selection-end-line="216" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/My_demo/A_Old/enfor_choose_v2/env.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="208" selection-start-line="208" selection-end-line="208" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/My_demo/A_Old/model_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/My_demo/A_Old/enfor_choose_v2/main.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -910,13 +865,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="385">
           <caret line="87" column="84" selection-start-line="87" selection-start-column="79" selection-end-line="87" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/My_demo/choice_net/main_4_only_positivy.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-696">
-          <caret line="299" column="19" selection-start-line="299" selection-start-column="19" selection-end-line="299" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -990,27 +938,6 @@
     <entry file="file://$PROJECT_DIR$/My_demo/enfor_choose_v2/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$USER_HOME$/anaconda3/envs/winter2/lib/python3.5/codecs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="310" selection-start-line="310" selection-end-line="310" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/My_demo/enfor_choose_v2/val_once_plot.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="49" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda3/envs/winter2/lib/python3.5/site-packages/keras/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16524">
-          <caret line="994" selection-start-line="994" selection-end-line="994" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/My_demo/0203_reinforcement_demo/test/env_test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="629">
@@ -1035,13 +962,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/My_demo/0203_reinforcement_demo/test/finish_evaluate.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="240" column="21" selection-end-line="293" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/My_demo/0203_reinforcement_demo/test/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1055,27 +975,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/My_demo/0203_reinforcement_demo/test/DQN_demo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="115" column="26" selection-start-line="115" selection-start-column="26" selection-end-line="115" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/anaconda3/envs/winter2/lib/python3.5/site-packages/keras/backend/tensorflow_backend.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="2360" column="8" selection-start-line="2360" selection-start-column="8" selection-end-line="2360" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/My_demo/enfor_choose_v2/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1649">
-          <caret line="97" column="37" selection-start-line="97" selection-start-column="37" selection-end-line="97" selection-end-column="37" />
-          <folding>
-            <element signature="e#18#72#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1112,16 +1015,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/My_demo/enfor_choose_v2/main_val.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="59" selection-start-line="59" selection-end-line="59" />
-          <folding>
-            <element signature="e#57#68#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/My_demo/enfor_choose_v2/model1_eval.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -1132,9 +1025,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/winter2/lib/python3.5/site-packages/keras/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="990" column="8" selection-start-line="990" selection-start-column="8" selection-end-line="990" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/My_demo/0203_reinforcement_demo/test/main_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1">
+        <state relative-caret-position="17">
           <caret line="48" column="23" selection-start-line="48" selection-start-column="23" selection-end-line="48" selection-end-column="23" />
           <folding>
             <element signature="e#450#1384#0" />
@@ -1142,10 +1042,172 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/My_demo/0203_reinforcement_demo/test/DQN_demo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/My_demo/Tensorflow_demo/30_predict_model.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="26" column="25" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="25" />
+        <state relative-caret-position="238">
+          <caret line="27" column="18" selection-end-line="129" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/My_demo/choice_net/main_4_only_positivy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="231" column="8" selection-start-line="231" selection-start-column="8" selection-end-line="237" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="1663" selection-start-line="1663" selection-end-line="1663" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/My_demo/enfor_choose_v3/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/My_demo/enfor_choose_v3/model_backup/predict_model.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/winter2/lib/python3.5/codecs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="310" selection-start-line="310" selection-end-line="310" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/My_demo/enfor_choose_v3/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="64" column="29" lean-forward="true" selection-end-line="108" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/My_demo/enfor_choose_v3/predict_model_create.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="64" lean-forward="true" selection-start-line="57" selection-start-column="4" selection-end-line="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/My_demo/enfor_choose_v3/model1_target.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/My_demo/enfor_choose_v3/model1_eval.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/My_demo/enfor_choose_v3/DQN.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1122">
+          <caret line="66" column="8" selection-start-line="66" selection-start-column="8" selection-end-line="66" selection-end-column="8" />
+          <folding>
+            <element signature="e#18#29#0" expanded="true" />
+            <element signature="e#8818#11290#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/My_demo/enfor_choose_v3/env.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-153">
+          <caret line="55" selection-start-line="55" selection-end-line="55" />
+          <folding>
+            <element signature="e#18#29#0" expanded="true" />
+            <element signature="e#2962#3234#0" />
+            <element signature="e#3304#5237#0" />
+            <element signature="e#5307#8223#0" />
+            <element signature="e#8286#11202#0" />
+            <element signature="e#11264#11457#0" />
+            <element signature="e#11529#11654#0" />
+            <element signature="e#11711#11988#0" />
+            <element signature="e#12034#13002#0" />
+            <element signature="e#13041#13509#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/My_demo/enfor_choose_v3/main_val.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="35" column="48" selection-start-line="35" selection-start-column="48" selection-end-line="35" selection-end-column="48" />
+          <folding>
+            <element signature="e#57#68#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/My_demo/enfor_choose_v2/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="68" column="43" lean-forward="true" selection-start-line="68" selection-start-column="43" selection-end-line="68" selection-end-column="43" />
+          <folding>
+            <element signature="e#18#72#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/My_demo/enfor_choose_v2/val_once_plot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="36" column="48" selection-start-line="36" selection-start-column="48" selection-end-line="36" selection-end-column="48" />
+          <folding>
+            <element signature="e#57#68#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/My_demo/enfor_choose_v3/val_once_plot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="36" column="48" selection-start-line="36" selection-start-column="48" selection-end-line="36" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/My_demo/enfor_choose_v2/main_val.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="35" column="48" selection-start-line="35" selection-start-column="48" selection-end-line="35" selection-end-column="48" />
+          <folding>
+            <element signature="e#57#68#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/My_demo/0203_reinforcement_demo/test/finish_evaluate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="255" column="48" lean-forward="true" selection-start-line="255" selection-start-column="48" selection-end-line="255" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/My_demo/enfor_choose_v3/vali_predict.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="61" column="30" lean-forward="true" selection-start-line="61" selection-start-column="30" selection-end-line="61" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/My_demo/enfor_choose_v3/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="62" column="25" selection-start-line="62" selection-start-column="25" selection-end-line="62" selection-end-column="25" />
+          <folding>
+            <element signature="e#18#72#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

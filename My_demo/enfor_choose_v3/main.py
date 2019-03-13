@@ -1,6 +1,6 @@
 # encoding: utf-8
-from My_demo.enfor_choose_v2.env import frameChooseEnv
-from My_demo.enfor_choose_v2.DQN import DQN
+from My_demo.enfor_choose_v3.env import frameChooseEnv
+from My_demo.enfor_choose_v3.DQN import DQN
 import is_for_import.ntu_date_preprocess_2 as ntu
 import os,time
 import numpy as np
@@ -12,6 +12,7 @@ step_in_each_episode = 30 # 每个数据步进几次
 
 step_for_learning = step_in_each_episode*100 # 多少步学一次
 step_for_validating = step_for_learning*10 # 多少步检测一次
+episode_for_validating = 1000
 
 memory_size = step_for_learning*3 # 总的存数据量，学习量的3倍吧，每次更新1/3
 
@@ -33,32 +34,29 @@ def run_env():
             action = RL.choose_action(observation)
 
             # Env take action
-            observation,a,reward,observation_ = env.step(action)
-
-            # Store
-            RL.store_transition(observation, action, reward, observation_)
-
-            # learning
-            if (total_step > 1) and (total_step % step_for_learning == 0):
-                print("learning ...",end='')
-                RL.learn()
-                print("FUNISH !!!")
-            # validating
-            if (total_step > 1) and (total_step % step_for_validating == 0):
-                print("Validating ...",end='')
-                validation(input_test[:100],lable_test[:100])
-                print("FUNISH !!!")
+            observation,a,observation_ = env.step(action)
 
             # swap observation
             observation = observation_
-            total_step += 1
 
+            total_step += 1
+        # get data list in this eposide and learn
+        data_list_this_eposide = env.get_data_list()
+
+        # learning
+        print("learning ...", end='')
+        RL.learn(data_list_this_eposide)
+        print("FUNISH !!!")
+
+        # validating
+        if episode % episode_for_validating == 0 and episode != 0:
+            print("Validating ...", end='')
+            validation(input_test[:100], lable_test[:100],env=env,RL=RL)
+            print("FUNISH !!!")
     # end of game
     print('over')
 
-def validation(date_input,lable):
-    env = frameChooseEnv()
-    RL = DQN()
+def validation(date_input,lable,env,RL):
     date_num = date_input.shape[0]
     right_number = 0
     for i in range(date_num):
@@ -68,7 +66,7 @@ def validation(date_input,lable):
         print(np.argmax(predict))
         print("Lable argmax is : ", end="")
         print(np.argmax(lable[i]))
-        if np.argmax(predict) == np.argmax(lable[i]):
+        if np.argmax(predict) == np.argmax(lable[i]):#####之前这里写错了，label写成了label_train
             right_number += 1
     # print summary
     print("-------------------------")
@@ -86,9 +84,11 @@ def predict_once(input_frames, input_lable, env, RL,step_num = 30):
         # get action # 记得去掉随机选择
         action = RL.choose_action(observation,random_switch = False)
         # act
-        observation,d,e,f = env.step(action)
+        observation,c,d = env.step(action)
     # end of game
     predict = env.predict(chose_frames=observation[1])
+    # print mask to check
+    print(observation[2])
     return predict
 
 
@@ -122,4 +122,5 @@ if __name__ == "__main__":
     # RL.plot_cost()
 
     # validation
-    validation(input_test[:100],lable_test[:100])
+    # 之前好像没有传入env和RL而是重新建立了一个
+    validation(input_test[:100],lable_test[:100],env=env,RL=RL)
